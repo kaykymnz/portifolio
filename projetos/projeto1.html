@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto 1 - Kayky Bezerra</title>
+  <title>Apolo Veículos - Kayky Bezerra</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
@@ -13,8 +13,6 @@
       font-family: 'Segoe UI', sans-serif;
     }
     .project-image {
-      max-height: 400px;
-      object-fit: cover;
       border-radius: 5px;
     }
     .badge-tech {
@@ -29,10 +27,17 @@
   <div class="container py-5">
     <a href="../index.html" class="btn btn-secondary mb-4">&larr; Voltar</a>
 
-    <h1 class="mb-3">Projeto 1</h1>
-    <p class="lead">Descrição detalhada do projeto, objetivo, funcionalidades, público-alvo e aprendizados durante o desenvolvimento.</p>
+    <h1 class="mb-3">Apolo Veículos</h1>
+      <p class="lead">
+        O <strong>Apolo Veículos</strong> é um sistema web para gerenciamento de negociações de automóveis, criado como projeto acadêmico com foco em boas práticas de desenvolvimento, modelagem de dados e experiência do usuário. Inicialmente chamado de <em>Royal Motors</em>, o sistema evoluiu em escopo e identidade até chegar à versão atual.
+      </p>
 
-    <img src="../imgs/apoloVeiculos.png" alt="Imagem do Projeto" class="img-fluid project-image mb-4">
+      
+
+
+    <div class="text-center">
+      <img src="../imgs/apoloVeiculos.png" alt="Imagem do Projeto" class="img-fluid project-image mb-4 w-100" style="max-width: 900px;">
+    </div>
 
     <!-- Botão para abrir galeria -->
     <div class="text-center mb-4">
@@ -48,11 +53,50 @@
       <span class="badge-tech bg-info"><i class="fas fa-database"></i> SQL</span>
       <span class="badge-tech bg-secondary"><i class="fas fa-project-diagram"></i> UML</span>
     </div>
+    <h4 class="mt-4">Objetivo</h4>
+      <p>
+        A ideia era desenvolver uma aplicação completa que permitisse o gerenciamento eficiente das negociações de veículos entre clientes, vendedores e administradores, ajudando na organização, no controle de estoque e na automatização dos processos.
+      </p>
+
+      <h4 class="mt-4">Funcionalidades</h4>
+      <ul>
+        <li>Visualização de veículos disponíveis pelo cliente</li>
+        <li>Formulário para manifestar interesse e iniciar uma negociação</li>
+        <li>Área exclusiva para os vendedores acompanharem e gerenciar as negociações</li>
+        <li>Dashboard para o administrador com controle de estoque de veículos, podendo incluir novos veículos e editar existentes</li>
+        <li>Atualização automática de status: ao marcar um carro como “vendido”, outras negociações com o mesmo carro são canceladas automaticamente e o carro ficará indisponível </li>
+      </ul>
+
+      <h4 class="mt-4">Público-Alvo</h4>
+      <p>
+        O sistema foi desenvolvido para a <strong>loja fictícia Apolo Veículos</strong>, simulando as rotinas e necessidades reais de uma revendedora de automóveis de pequeno a médio porte. A ideia foi construir uma aplicação que permitisse a organização eficiente de negociações, controle de estoque e uma comunicação fácil entre o cliente e o vendedor.
+      </p>
+      <p>
+         O projeto tem como foco revendas que enfrentam desafios na organização do processo de vendas, especialmente em ambientes onde o volume de negociações pode ser alto e difícil de controlar sem um sistema dedicado.
+      </p>
+
+      <h4 class="mt-4">Motivação do Projeto</h4>
+      <p>
+        A <strong>Apolo Veículos</strong> ficou amplamente conhecida pela sua especialização na venda de carros populares, tornando-se referência. No entanto, ao tentar expandir seu catálogo para incluir modelos menos procurados, a empresa percebeu que o foco dos clientes continuava nos populares.
+      </p>
+      <p>
+        Como resultado, as vendas de veículos populares continuaram em grande escala, o que expôs uma dificuldade de gestão devido à alta demanda. A ausência de um sistema gerava problemas no controle de estoque, acompanhamento de negociações simultâneas e na comunicação entre clientes e vendedores.
+      </p>
+      <p>
+        Assim, o sistema Apolo Veículos foi idealizado como uma solução acadêmica para enfrentar esses desafios, oferecendo um ambiente digital que organiza as negociações, melhora o controle de estoque e proporciona uma experiência mais clara e prática tanto para clientes quanto para a equipe interna da loja.
+      </p>
+
+      <h4 class="mt-4">Diagramas Utilizados</h4>
+      <ul>
+        <li><strong>DER:</strong> define as entidades, atributos e relacionamentos do banco de dados</li>
+        <li><strong>Casos de Uso (UML):</strong> descreve os atores e as interações principais com o sistema</li>
+        <li><strong>DFD (Diagrama de Fluxo de Dados):</strong> mapeia o fluxo de informações dentro do sistema</li>
+      </ul>
 
     <h4 class="mt-4">Links:</h4>
     <ul>
       <li><a href="https://github.com/seu-usuario/repositorio-projeto1" target="_blank" class="text-warning">Repositório no GitHub</a></li>
-      <li><a href="https://projeto1-demo.netlify.app" target="_blank" class="text-warning">Demo ao vivo</a></li>
+      <!-- <li><a href="https://projeto1-demo.netlify.app" target="_blank" class="text-warning">Demo ao vivo</a></li> -->
     </ul>
   </div>
 

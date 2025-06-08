@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto 1 - Kayky Bezerra</title>
+  <title>Funko Log - Kayky Bezerra</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
@@ -13,8 +13,6 @@
       font-family: 'Segoe UI', sans-serif;
     }
     .project-image {
-      max-height: 400px;
-      object-fit: cover;
       border-radius: 5px;
     }
     .badge-tech {
@@ -29,11 +27,11 @@
   <div class="container py-5">
     <a href="../index.html" class="btn btn-secondary mb-4">&larr; Voltar</a>
 
-    <h1 class="mb-3">Projeto 1</h1>
-    <p class="lead">Descrição detalhada do projeto, objetivo, funcionalidades, público-alvo e aprendizados durante o desenvolvimento.</p>
-
-    <img src="../imgs/funkoLog.png" alt="Imagem do Projeto" class="img-fluid project-image mb-4">
-
+    <h1 class="mb-3">Funko Log</h1>
+    <p class="lead">Funko Log é um sistema CRUD simples de gerenciamento e exibição de produtos Funko POP!, desenvolvido por diversão como prática de PHP e MySQL com phpMyAdmin.</p>
+    <div class="text-center">
+        <img src="../imgs/funkoLog.png" alt="Imagem do Projeto" class="img-fluid project-image mb-4">
+    </div>
     <!-- Botão para abrir galeria -->
     <div class="text-center mb-4">
       <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#galeriaProjeto">Ver Galeria de Imagens</button>
@@ -46,13 +44,24 @@
       <span class="badge-tech bg-warning text-dark"><i class="fab fa-js"></i> JavaScript</span>
       <span class="badge-tech bg-purple" style="background-color: #445cad;"><i class="fab fa-php"></i> PHP</span>
       <span class="badge-tech bg-info"><i class="fas fa-database"></i> SQL</span>
-      <span class="badge-tech bg-secondary"><i class="fas fa-project-diagram"></i> UML</span>
+
     </div>
+      <h4 class="mt-4">Funcionalidades:</h4>
+      <ul>
+        <li>Visualização dos Funkos disponíveis no catálogo</li>
+        <li>Administração com cadastro, edição e exclusão de Funkos</li>
+        <li>Sistema feito para uso local ou em hospedagens básicas</li>
+      </ul>
+
+      <h4 class="mt-4">Objetivo:</h4>
+      <p>
+        Este projeto foi desenvolvido sem fins comerciais, como forma de entretenimento pessoal e reforço prático de conhecimentos em programação web, especialmente com PHP e integração com banco de dados MySQL. O foco principal foi praticar as operações de CRUD e entender o fluxo de dados em um sistema de loja virtual simples.
+      </p>
 
     <h4 class="mt-4">Links:</h4>
     <ul>
       <li><a href="https://github.com/seu-usuario/repositorio-projeto1" target="_blank" class="text-warning">Repositório no GitHub</a></li>
-      <li><a href="https://projeto1-demo.netlify.app" target="_blank" class="text-warning">Demo ao vivo</a></li>
+      <!-- <li><a href="https://projeto1-demo.netlify.app" target="_blank" class="text-warning">Demo ao vivo</a></li> -->
     </ul>
   </div>
 
