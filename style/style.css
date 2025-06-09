@@ -1,0 +1,92 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Tema escuro */
+.dark-mode body {
+  background-color: #121212;
+  color: white;
+}
+
+/* Exemplo de como inverter botões, cards, etc */
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+.dark-mode .btn:hover{
+    background-color: #575757;
+}
+
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .dark-mode .theme-toggle {
+    background-color: #333;
+    color: #fff;
+  }
+.highlight {
+    color: #445cad;
+}
+.profile-img {
+    max-width: 250px;
+    border-radius: 20px;
+}
+.tech-badge {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    color: #ffffff;
+}
+.tech-badge:hover{
+    transform: scale(1.01);
+    cursor: default;
+}
+.project-card {
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: scale(1.01);
+}
+.project-image {
+    border-radius: 5px;
+}
+.badge-tech {
+    margin: 3px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #ffffff;
+}
+.banner-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn{
+    background-color: #445cad;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #2d3d70;
+    color: #fff;
+}
