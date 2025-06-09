@@ -1,22 +1,20 @@
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  const html = document.documentElement;
-  const toggleBtn = document.querySelector('.theme-toggle');
-
-  if (savedTheme === 'dark') {
-    html.classList.add('dark-mode');
-    toggleBtn.textContent = 'Modo Claro';
-  } else {
-    toggleBtn.textContent = 'Modo Escuro';
-  }
-});
-
 function toggleTheme() {
-  const html = document.documentElement;
-  const toggleBtn = document.querySelector('.theme-toggle');
+  const currentTheme = document.documentElement.classList.toggle('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', currentTheme);
 
-  html.classList.toggle('dark-mode');
-  const isDark = html.classList.contains('dark-mode');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  toggleBtn.textContent = isDark ? 'Modo Claro' : 'Modo Escuro';
+  // Atualiza o estado do checkbox
+  document.getElementById('themeToggle').checked = currentTheme === 'dark';
 }
+
+// Define o estado inicial do checkbox baseado no tema salvo
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  const isDark = savedTheme === 'dark';
+
+  if (isDark) {
+    document.documentElement.classList.add('dark-mode');
+  }
+
+  const toggle = document.getElementById('themeToggle');
+  if (toggle) toggle.checked = isDark;
+});
