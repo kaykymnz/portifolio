@@ -5,23 +5,23 @@ body {
 
 /* Tema escuro */
 .dark-mode body {
-  background-color: #121212;
+  background-color: #1e1e27;
   color: white;
 }
 
 /* Exemplo de como inverter botões, cards, etc */
 .dark-mode .card {
-  background-color: #1e1e1e;
+  background-color: #232224;
   color: white;
 }
 
 .dark-mode .btn {
-  background-color: #333;
+  background-color: #aa002b;
   color: white;
   border: none;
 }
 .dark-mode .btn:hover{
-    background-color: #575757;
+    background-color: #8b0023;
 }
 
   .theme-toggle {
@@ -38,11 +38,11 @@ body {
   }
 
   .dark-mode .theme-toggle {
-    background-color: #333;
+    background-color: #df0139;
     color: #fff;
   }
 .highlight {
-    color: #445cad;
+    color: #df0139;
 }
 .profile-img {
     max-width: 250px;
@@ -83,11 +83,11 @@ body {
     border-radius: 10px;
 }
 .btn{
-    background-color: #445cad;
+    background-color: #aa002b;
     color: #fff;
 }
 .btn:hover{
-    background-color: #2d3d70;
+    background-color: #8b0023;
     color: #fff;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .theme-toggle-label {
   background-color: #222;
-  border: 2px solid #2d3d70;
+  border: 2px solid #8b0023;
   border-radius: 40px;
   cursor: pointer;
   display: flex;
@@ -130,7 +130,7 @@ body {
 }
 
 .theme-toggle-label .fa-moon {
-  color: #2d3d70;
+  color: #8b0023;
 }
 
 .theme-toggle-label .ball {
@@ -152,4 +152,33 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked + .theme-toggle-label .ball {
   transform: translateX(40px);
+}
+
+
+
+/* modal do design */
+
+/* Modal padrão */
+.modal-content {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Modal no modo escuro */
+.dark-mode .modal-content {
+  background-color: #28242a;
+  color: #fff;
+}
+
+/* Cabeçalho do modal */
+.modal-header-custom {
+  border-bottom: 1px solid #ccc;
+}
+.dark-mode .modal-header-custom {
+  border-bottom: 1px solid #444;
+}
+
+/* Botão de fechar no modo escuro */
+.dark-mode .btn-close {
+  filter: invert(1);
 }

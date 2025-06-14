@@ -106,6 +106,7 @@
           </div>
         </div>
       </div>
+      
       <!-- Adicione mais projetos aqui -->
     </div>
     
@@ -113,15 +114,15 @@
 
   <!-- Cartazes / Web Design -->
   <section class="container py-5 border-top" id="cartazes">
-    <h2 class="mb-4">Design e Cartazes</h2>
-    <p>Criações visuais feitas com foco em estética, clareza e propósito comunicativo, usando ferramentas como Canva e Photoshop.</p>
+    <h2 class="mb-4">Cartazes</h2>
+    <!-- <p>Criações visuais feitas com foco em estética, clareza e propósito comunicativo, usando ferramentas como Canva e Photoshop.</p> -->
     <div class="row g-4">
       <div class="col-md-4 mb-4">
         <div class="card project-card">
           <img src="imgs/cartazes/estagio.png" class="card-img-top" alt="Cartaz 1">
           <div class="card-body">
-            <h5 class="card-title">Cartaz 1</h5>
-            <p class="card-text">Peça visual feita para redes sociais e divulgação de eventos.</p>
+            <h5 class="card-title">Programa de Estágio</h5>
+            <p class="card-text">Peça visual feita para divulgação de programa de estágio.</p>
             <a href="cartazes/cartaz1.html" class="btn">Ver mais</a>
           </div>
         </div>
@@ -132,15 +133,34 @@
         <div class="card project-card">
           <img src="imgs/cartazes/racismo.png" class="card-img-top" alt="Cartaz 1">
           <div class="card-body">
-            <h5 class="card-title">Cartaz 1</h5>
-            <p class="card-text">Peça visual feita para redes sociais e divulgação de eventos.</p>
+            <h5 class="card-title">Combate ao Racismo</h5>
+            <p class="card-text">Peça visual interna feita para divulgar uma palestra sobre racismo.</p>
             <a href="cartazes/cartaz2.html" class="btn">Ver mais</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+<!-- Designs -->
+<section class="container py-5 border-top" id="designs">
+  <h2 class="mb-4">Designs</h2>
+  <div class="row g-4">
 
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card project-card text-center">
+        <img src="imgs/designs/LGUltraGearWQHD34.png" class="card-img-top design-thumb" alt="Design 1">
+        <div class="card-body">
+          <p class="card-text">Design - Monitor para Venda.</p>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#designModal1">Ver detalhes</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adicione mais cards semelhantes -->
+    
+  </div>
+</section>
 
 
   <footer class="text-center p-4 mt-5 border-top">
@@ -156,5 +176,22 @@
 </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/modoEscuro.js"></script>
+
+<!-- Modal Design 1 -->
+<div class="modal fade" id="designModal1" tabindex="-1" aria-labelledby="designModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header modal-header-custom">
+        <h5 class="modal-title" id="designModalLabel1">Design - Monitor para Venda
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="imgs/designs/LGUltraGearWQHD34.png" class="img-fluid rounded" alt="Design 1 em detalhe">
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
