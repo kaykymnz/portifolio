@@ -4,20 +4,13 @@
 :root {
   --primary-color: #457b9d;
   --secondary-color: #52b788;
-  --success-color: #198754;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #0dcaf0;
-  --light-color: #f8f9fa;
-  --dark-color: #1f1f1f;
   
   --bg-light: #ffffff;
   --bg-dark: #0f1419;
   --text-light: #212529;
-  --text-dark: #33515e;
+  --text-dark: #e9ecef;
   
   --border-radius: 12px;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
   
@@ -68,7 +61,7 @@ body {
    NAVBAR
    ======================================== */
 .navbar {
-  background: linear-gradient(135deg, rgba(69, 123, 157, 0.95) 0%, rgba(82, 183, 136, 0.95) 100%);
+  background: #457b9d;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-md);
@@ -76,7 +69,7 @@ body {
 }
 
 [data-bs-theme="dark"] .navbar {
-  background: linear-gradient(135deg, rgba(69, 123, 157, 0.8) 0%, rgba(82, 183, 136, 0.8) 100%);
+  background: #457b9d;
 }
 
 .navbar-brand {
@@ -135,7 +128,6 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   padding: 4rem 0;
-  margin-top: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -145,21 +137,18 @@ body {
 }
 
 .hero-section::before {
-  content: '';
+  /* content: '';
   position: absolute;
   top: -50%;
   right: -50%;
   width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(69, 123, 157, 0.05) 0%, transparent 70%);
-  pointer-events: none;
+  height: 100%; */
+  /* background: rgba(69, 123, 157, 0.05); */
+  /* pointer-events: none; */
 }
 
 .hero-content h1 {
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #457b9d;
   font-weight: 800;
   margin-bottom: 1.5rem;
   animation: slideInLeft 0.8s ease;
@@ -192,7 +181,7 @@ body {
 }
 
 .hero-content .btn-primary {
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
+  background: #457b9d;
   border: none;
 }
 
@@ -224,17 +213,14 @@ body {
 }
 
 .profile-img {
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-  border: 4px solid var(--primary-color);
+  /* box-shadow: var(--shadow-lg); */
+  /* border: 4px solid var(--primary-color); */
   transition: var(--transition);
 }
 
-.profile-img:hover {
-  transform: scale(1.05) rotate(2deg);
-}
 
 /* Social Links */
 .social-links {
@@ -250,7 +236,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
+  background: #457b9d;
   color: white;
   font-size: 1.2rem;
   transition: var(--transition);
@@ -274,27 +260,27 @@ body {
 }
 
 .technologies-section {
-  background: linear-gradient(180deg, rgba(69, 123, 157, 0.05) 0%, transparent 100%);
+  background: rgba(69, 123, 157, 0.05);
 }
 
 [data-bs-theme="dark"] .technologies-section {
-  background: linear-gradient(180deg, rgba(69, 123, 157, 0.1) 0%, transparent 100%);
+  background: rgba(69, 123, 157, 0.1);
 }
 
 .education-section {
-  background-color: var(--bg-light);
+  background-color: transparent;
 }
 
 [data-bs-theme="dark"] .education-section {
-  background-color: var(--bg-dark);
+  background-color: transparent;
 }
 
 .projects-section {
-  background: linear-gradient(180deg, rgba(82, 183, 136, 0.05) 0%, transparent 100%);
+  background: rgba(69, 123, 157, 0.05);
 }
 
 [data-bs-theme="dark"] .projects-section {
-  background: linear-gradient(180deg, rgba(82, 183, 136, 0.1) 0%, transparent 100%);
+  background: rgba(69, 123, 157, 0.1);
 }
 
 .contact-section {
@@ -319,16 +305,12 @@ body {
 }
 
 [data-bs-theme="dark"] .section-title {
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  color: #52b788;
 }
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: var(--text-dark);
+  color: var(--text-light);
   margin: 0;
 }
 
@@ -364,7 +346,7 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
+  background: #457b9d;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -471,8 +453,8 @@ body {
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  /* transform: translateY(-8px);
+  box-shadow: var(--shadow-lg); */
 }
 
 .project-image {
@@ -494,7 +476,7 @@ body {
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 .project-overlay {
@@ -529,7 +511,7 @@ body {
 }
 
 .project-description {
-  color: var(--text-dark);
+  color: var(--text-light);
   margin-bottom: auto;
   flex-grow: 1;
 }
@@ -580,7 +562,7 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
+  background: #457b9d;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -610,7 +592,7 @@ body {
    FOOTER
    ======================================== */
 .footer {
-  background: linear-gradient(135deg, rgba(69, 123, 157, 0.95) 0%, rgba(82, 183, 136, 0.95) 100%);
+  background: #457b9d;
   color: white;
   padding: 3rem 0 1rem;
   margin-top: 5rem;
@@ -618,7 +600,7 @@ body {
 }
 
 [data-bs-theme="dark"] .footer {
-  background: linear-gradient(135deg, rgba(69, 123, 157, 0.8) 0%, rgba(82, 183, 136, 0.8) 100%);
+  background: #457b9d;
 }
 
 .footer h5 {
@@ -670,7 +652,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
+  background: #457b9d;
   color: white;
   border: none;
   box-shadow: var(--shadow-lg);
@@ -885,10 +867,11 @@ body {
    PÁGINAS DE PROJETOS
    ======================================== */
 .project-hero {
-  background: linear-gradient(135deg, #457b9d 0%, #52b788 100%);
+  /* background: #457b9d; */
   color: white;
   padding: 4rem 0;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  
 }
 
 .breadcrumb-custom {
@@ -1004,7 +987,7 @@ body {
 
 .diagram-card p {
   font-size: 0.9rem;
-  color: var(--text-dark);
+  color: var(--primary-color);
   margin: 0;
 }
 
