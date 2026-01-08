@@ -3,40 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cartaz 1 - Kayky Bezerra</title>
+  <title>Programa de Estágio - Kayky Bezerra</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <script>
-      // Aplicar o tema salvo o mais cedo possível
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark-mode');
-  }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    }
   </script>
 </head>
 
 <body>
-  <div class="container py-5">
-    <a href="../index.html" class="btn btn-outline-light mb-4">&larr; Voltar</a>
-    <h1 class="mb-4">Cartaz 1</h1>
-    <img src="../imgs/cartazes/estagio.png" alt="Cartaz 1" class="banner-img mb-4">
-    <p><strong>Descrição:</strong> Cartaz criado para divulgação do programa de estágio nas redes sociais.</p>
-    <p><strong>Ferramentas utilizadas:</strong> Canva.</p>
-    <p><strong>Objetivo:</strong> Atrair a maior quantidade de estudantes interessados em estágio, utilizando elementos representativos.</p>
-  </div>
 
-  <footer class="text-center p-4 mt-5 border-top">
-    <p>&copy; 2025 Kayky Bezerra - Todos os direitos reservados.</p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">
+        <i class="fas fa-code"></i> Kayky
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Voltar ao Portfólio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Design Hero -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="breadcrumb-custom mb-4">
+        <a href="../index.html" class="text-white text-decoration-none">
+          <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+        </a>
+      </div>
+      
+      <h1 class="display-3 fw-bold mb-3">Programa de Estágio</h1>
+      <p class="lead text-white">Cartaz promocional criado para divulgação</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <section class="project-content">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Imagem Principal -->
+        <div class="col-lg-8">
+          <div class="content-section">
+            <h2 class="section-title-project">Visualização</h2>
+            <div class="text-center">
+              <img src="../imgs/cartazes/estagio.png" alt="Cartaz Programa de Estágio" class="img-fluid rounded" style="max-width: 100%; border: 2px solid var(--primary-color);">
+            </div>
+          </div>
+        </div>
+
+        <!-- Informações -->
+        <div class="col-lg-4">
+          <div class="sidebar-card">
+            <h3 class="card-title">Descrição</h3>
+            <p>Cartaz criado para divulgação do programa de estágio nas redes sociais, com objetivo de atrair a maior quantidade de estudantes interessados.</p>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="card-title">Detalhes</h3>
+            <div class="tech-list-vertical">
+              <span class="tech-item"><i class="fas fa-tools"></i> Ferramenta: Canva</span>
+              <span class="tech-item"><i class="fas fa-image"></i> Formato: PNG</span>
+              <span class="tech-item"><i class="fas fa-bullseye"></i> Objetivo: Divulgação</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3 class="card-title">Objetivo</h3>
+            <p>Atrair estudantes interessados em estágio utilizando elementos representativos, cores vibrantes e mensagem clara e objetiva.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="text-center">
+        <p class="text-muted mb-0">&copy; 2025 Kayky Bezerra. Desenvolvido com <i class="fas fa-heart text-danger"></i> por mim mesmo.</p>
+      </div>
+    </div>
   </footer>
 
-  <div class="theme-toggle-container">
-  <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
-  <label for="themeToggle" class="theme-toggle-label">
-    <i class="fas fa-sun"></i>
-    <i class="fas fa-moon"></i>
-    <span class="ball"></span>
-  </label>
-</div>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle-btn">
+    <button id="themeToggleBtn" class="btn-theme-toggle" title="Alternar tema">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../scripts/modoEscuro.js"></script>
 </body>
