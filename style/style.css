@@ -3,8 +3,14 @@
    VARIÁVEIS CSS
    ======================================== */
 :root {
-  --primary-color: #457b9d;
-  --secondary-color: #52b788;
+  --color1: #44749d;
+  --color2: #c6d4e1;
+  --color3: #ffffff;
+  --color4: #ebe7e0;
+  --color5: #bdb8ad;
+  
+  --primary-color: #44749d;
+  --secondary-color: #c6d4e1;
   
   --bg-light: #ffffff;
   --bg-dark: #0f1419;
@@ -47,7 +53,7 @@ body {
    NAVBAR
    ======================================== */
 .navbar {
-  background: #457b9d;
+  background: var(--color1);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-md);
@@ -109,7 +115,7 @@ body {
    ======================================== */
 .hero-section {
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  background: linear-gradient(135deg, var(--color3) 0%, var(--color4) 100%);
   padding: 4rem 0;
   position: relative;
   overflow: hidden;
@@ -127,7 +133,7 @@ body {
 }
 
 .hero-content h1 {
-  color: #457b9d;
+  color: var(--color1);
   font-weight: 800;
   margin-bottom: 1.5rem;
   animation: slideInLeft 0.8s ease;
@@ -159,7 +165,7 @@ body {
 }
 
 .hero-content .btn-primary {
-  background: #457b9d;
+  background: var(--color1);
   border: none;
 }
 
@@ -209,7 +215,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #457b9d;
+  background: var(--color1);
   color: white;
   font-size: 1.2rem;
   transition: var(--transition);
@@ -233,7 +239,7 @@ body {
 }
 
 .technologies-section {
-  background: rgba(69, 123, 157, 0.05);
+  background: rgba(198, 212, 225, 0.3);
 }
 
 .education-section {
@@ -241,7 +247,7 @@ body {
 }
 
 .projects-section {
-  background: rgba(69, 123, 157, 0.05);
+  background: rgba(198, 212, 225, 0.3);
 }
 
 .contact-section {
@@ -258,7 +264,7 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #457b9d;
+  color: var(--color1);
 }
 
 .section-subtitle {
@@ -290,7 +296,7 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 auto 1.5rem;
-  background: #457b9d;
+  background: var(--color1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -481,7 +487,7 @@ body {
   width: 60px;
   height: 60px;
   margin: 0 auto 1.5rem;
-  background: #457b9d;
+  background: var(--color1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -511,7 +517,7 @@ body {
    FOOTER
    ======================================== */
 .footer {
-  background: #457b9d;
+  background: var(--color1);
   color: white;
   padding: 3rem 0 1rem;
   margin-top: 5rem;
