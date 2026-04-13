@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrono Neves - Kayky Bezerra</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- ── MODAL DE GALERIA ── -->
+  <div class="gallery-modal" role="dialog" aria-modal="true" aria-label="Galeria de imagens">
+    <button class="gallery-modal-close" aria-label="Fechar galeria">&#x2715;</button>
+    <div class="gallery-modal-inner">
+      <button class="modal-arrow prev" aria-label="Imagem anterior">&#8249;</button>
+      <div style="overflow:hidden; width:100%; border-radius:10px;">
+        <div class="gallery-modal-track"></div>
+      </div>
+      <button class="modal-arrow next" aria-label="Próxima imagem">&#8250;</button>
+    </div>
+    <div class="gallery-modal-counter"></div>
+    <div class="gallery-modal-thumbs"></div>
+  </div>
+
+  <main class="project-wrapper">
+    <a class="project-back" href="../pages/index.html#projetos-secao"><i class="bi bi-arrow-left"></i> Voltar aos projetos</a>
+
+    <!-- ── HERO GALLERY ── -->
+    <section class="hero-gallery">
+      <div class="hero-gallery-inner">
+        <div class="hero-gallery-track"></div>
+        <button class="hero-arrow prev" aria-label="Anterior">&#8249;</button>
+        <button class="hero-arrow next" aria-label="Próximo">&#8250;</button>
+      </div>
+      <div class="hero-gallery-thumbs"></div>
+    </section>
+
+    <section class="project-layout">
+      <div class="project-main">
+        <article class="project-block">
+          <h2>Sobre o Projeto</h2>
+          <p>Patrono Neves é uma plataforma web de cursos online que oferece gerenciamento completo de cursos, alunos e conteúdo educacional. Desenvolvida como projeto acadêmico com foco em escalabilidade e experiência do usuário educacional.</p>
+        </article>
+
+        <article class="project-block">
+          <h3>Objetivo</h3>
+          <p>Criar uma plataforma educacional completa que permitisse a criação e gerenciamento de cursos online, com funcionalidades para instrutores publicarem conteúdo e alunos acessarem aulas e material didático de forma organizada e intuitiva.</p>
+        </article>
+
+        <article class="project-block">
+          <h3>Funcionalidades Principais</h3>
+          <ul class="project-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i> Catálogo de cursos com descrição detalhada</li>
+            <li><i class="bi bi-check-circle-fill"></i> Sistema de inscrição e matrícula em cursos</li>
+            <li><i class="bi bi-check-circle-fill"></i> Painel do instrutor para gerenciamento de cursos</li>
+            <li><i class="bi bi-check-circle-fill"></i> Área do aluno com acesso a aulas e materiais</li>
+            <li><i class="bi bi-check-circle-fill"></i> Sistema de acompanhamento de progresso</li>
+            <li><i class="bi bi-check-circle-fill"></i> Gerenciamento de certificados</li>
+          </ul>
+        </article>
+
+        <article class="project-block">
+          <h3>Público-Alvo</h3>
+          <p>A plataforma foi desenvolvida para instituições educacionais, instrutores independentes e centros de treinamento que desejam oferecer cursos online. É ideal para qualquer organização que queira disponibilizar educação à distância de forma profissional e acessível.</p>
+        </article>
+
+        <article class="project-block">
+          <h3>Estrutura da Plataforma</h3>
+          <div class="project-diagram-grid">
+            <div class="diagram-box"><i class="bi bi-journal-text"></i><h4>Cursos</h4><p>Gerenciamento completo de cursos e conteúdo educacional.</p></div>
+            <div class="diagram-box"><i class="bi bi-people-fill"></i><h4>Usuários</h4><p>Controle de alunos, instrutores e administradores.</p></div>
+            <div class="diagram-box"><i class="bi bi-graph-up-arrow"></i><h4>Acompanhamento</h4><p>Relatórios de progresso e análises de aprendizado.</p></div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="project-sidebar">
+        <section class="sidebar-card">
+          <h3>Tecnologias</h3>
+          <ul class="tech-list">
+            <li><i class="bi bi-filetype-html"></i> HTML5</li>
+            <li><i class="bi bi-filetype-css"></i> CSS3</li>
+            <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+            <li><i class="bi bi-filetype-php"></i> PHP</li>
+            <li><i class="bi bi-database-fill"></i> MySQL</li>
+            <li><i class="bi bi-bootstrap-fill"></i> Bootstrap</li>
+          </ul>
+        </section>
+
+        <section class="sidebar-card">
+          <h3>Links Úteis</h3>
+          <a class="project-link" href="https://github.com/kaykymnz" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </section>
+
+        <section class="sidebar-card">
+          <h3>Status do Projeto</h3>
+          <div class="project-status done"><i class="bi bi-check-circle-fill"></i> Concluído</div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="project-footer">
+    <p>&copy; 2025 Kayky Bezerra.</p>
+  </footer>
+
+  <script src="../js/gallery.js"></script>
+  <script>
+      loadGallery('../images/patrono-neves/');
+  </script>
+</body>
+</html>

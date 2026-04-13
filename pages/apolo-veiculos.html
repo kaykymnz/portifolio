@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apolo Veículos - Kayky Bezerra</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="project-detail-page">
+
+  <!-- ── MODAL DE GALERIA ── -->
+  <div class="gallery-modal" role="dialog" aria-modal="true" aria-label="Galeria de imagens">
+    <button class="gallery-modal-close" aria-label="Fechar galeria">&#x2715;</button>
+    <div class="gallery-modal-inner">
+      <button class="modal-arrow prev" aria-label="Imagem anterior">&#8249;</button>
+      <div style="overflow:hidden; width:100%; border-radius:10px;">
+        <div class="gallery-modal-track"></div>
+      </div>
+      <button class="modal-arrow next" aria-label="Próxima imagem">&#8250;</button>
+    </div>
+    <div class="gallery-modal-counter"></div>
+    <div class="gallery-modal-thumbs"></div>
+  </div>
+
+  <main class="project-wrapper">
+    <a class="project-back" href="../pages/index.html#projetos-secao"><i class="bi bi-arrow-left"></i> Voltar aos projetos</a>
+
+    <!-- ── HERO GALLERY ── -->
+    <section class="hero-gallery">
+      <div class="hero-gallery-inner">
+        <div class="hero-gallery-track"></div>
+        <button class="hero-arrow prev" aria-label="Anterior">&#8249;</button>
+        <button class="hero-arrow next" aria-label="Próximo">&#8250;</button>
+      </div>
+      <div class="hero-gallery-thumbs"></div>
+    </section>
+
+    <section class="project-layout">
+      <div class="project-main">
+        <article class="project-block">
+          <h2>Sobre o Projeto</h2>
+          <p>O Apolo Veículos é um sistema web para gerenciamento de negociações de automóveis, criado como projeto acadêmico com foco em boas práticas de desenvolvimento, modelagem de dados e experiência do usuário. Inicialmente chamado de Royal Motors, o sistema evoluiu em escopo e identidade até chegar à versão atual.</p>
+        </article>
+
+        <article class="project-block">
+          <h3>Objetivo</h3>
+          <p>A ideia era desenvolver uma aplicação completa que permitisse o gerenciamento eficiente das negociações de veículos entre clientes, vendedores e administradores, ajudando na organização, no controle de estoque e na automatização dos processos.</p>
+        </article>
+
+        <article class="project-block">
+          <h3>Funcionalidades Principais</h3>
+          <ul class="project-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i> Visualização de veículos disponíveis pelo cliente</li>
+            <li><i class="bi bi-check-circle-fill"></i> Formulário para manifestar interesse e iniciar uma negociação</li>
+            <li><i class="bi bi-check-circle-fill"></i> Área exclusiva para os vendedores acompanharem e gerenciar as negociações</li>
+            <li><i class="bi bi-check-circle-fill"></i> Dashboard para o administrador com controle de estoque de veículos</li>
+            <li><i class="bi bi-check-circle-fill"></i> Atualização automática de status e cancelamento de negociações</li>
+          </ul>
+        </article>
+
+        <article class="project-block">
+          <h3>Público-Alvo</h3>
+          <p>O sistema foi desenvolvido para a loja fictícia Apolo Veículos, simulando as rotinas e necessidades reais de uma revendedora de automóveis de pequeno a médio porte. A ideia foi construir uma aplicação que permitisse a organização eficiente de negociações e uma comunicação fácil entre cliente e vendedor.</p>
+          <p style="margin-top: 10px;">O projeto tem como foco revendas que enfrentam desafios na organização do processo de vendas, especialmente em ambientes onde o volume de negociações pode ser alto.</p>
+        </article>
+
+        <article class="project-block">
+          <h3>Diagramas Utilizados</h3>
+          <div class="project-diagram-grid">
+            <div class="diagram-box"><i class="bi bi-diagram-3-fill"></i><h4>DER</h4><p>Define as entidades, atributos e relacionamentos do banco de dados.</p></div>
+            <div class="diagram-box"><i class="bi bi-share-fill"></i><h4>Casos de Uso (UML)</h4><p>Descreve os atores e interações principais com o sistema.</p></div>
+            <div class="diagram-box"><i class="bi bi-bezier2"></i><h4>DFD</h4><p>Mapeia o fluxo de informações dentro do sistema.</p></div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="project-sidebar">
+        <section class="sidebar-card">
+          <h3>Tecnologias</h3>
+          <ul class="tech-list">
+            <li><i class="bi bi-filetype-html"></i> HTML5</li>
+            <li><i class="bi bi-filetype-css"></i> CSS3</li>
+            <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+            <li><i class="bi bi-filetype-php"></i> PHP</li>
+            <li><i class="bi bi-database-fill"></i> MySQL</li>
+            <li><i class="bi bi-diagram-3-fill"></i> UML</li>
+          </ul>
+        </section>
+
+        <section class="sidebar-card">
+          <h3>Links Úteis</h3>
+          <a class="project-link" href="https://github.com/kaykymnz/royalMotors" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </section>
+
+        <section class="sidebar-card">
+          <h3>Status do Projeto</h3>
+          <div class="project-status done"><i class="bi bi-check-circle-fill"></i> Concluído</div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="project-footer">
+    <p>&copy; 2025 Kayky Bezerra.</p>
+  </footer>
+
+  <script src="../js/gallery.js"></script>
+  <script>
+      loadGallery('../images/apolo-veiculos/');
+  </script>
+</body>
+</html>

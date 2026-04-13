@@ -2,435 +2,202 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayky Bezerra - Desenvolvedor Full Stack</title>
-  
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style/style.css">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Story+Script&display=swap" rel="stylesheet">
-  
-
+  <title>Kayky Bezerra</title>
+  <link rel="stylesheet" href="../styles/style.css"> 
 </head>
-
 <body>
 
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#inicio">
-        <i class="fas fa-code"></i>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#designs">Designs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center" id="inicio">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="hero-content">
-            <h1 class="display-3 fw-bold mb-3">Kayky Bezerra</h1>
-            <p class="lead mb-3">Desenvolvedor Full Stack apaixonado por criar soluções inovadoras</p>
-            <p class="text-muted mb-4">Especializado em desenvolvimento web com foco em boas práticas, escalabilidade e experiência do usuário.</p>
-            <div class="d-flex gap-3">
-              <a href="#contato" class="btn btn-primary btn-lg">Vamos conversar</a>
-              <a href="#projetos" class="btn btn-outline-primary btn-lg">Ver projetos</a>
-            </div>
-            <div class="social-links mt-5">
-              <a href="https://github.com/kaykymnz" target="_blank" class="social-icon" title="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/kayky-bezerra-49a730235/" target="_blank" class="social-icon" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="mailto:menezeskayky16@gmail.com" class="social-icon" title="Email">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 text-center">
-          <div class="hero-image">
-            <img src="imgs/eu.png" alt="Kayky avatar" class="img-fluid profile-img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tecnologias -->
-  <section class="technologies-section" id="tecnologias">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Tecnologias</h2>
-        <p class="section-subtitle">Ferramentas e linguagens utilizadas</p>
-      </div>
+<div class="container" id="home">
+    <div class="left">
+      <div class="code-decoration">&lt; / &gt;</div>
       
-      <div class="row g-4">
-        <!-- Frontend -->
-        <div class="col-md-6 col-lg-3">
-          <div class="tech-category">
-            <div class="tech-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h4>Frontend</h4>
-            <div class="tech-list">
-              <span class="tech-badge">HTML5</span>
-              <span class="tech-badge">CSS3</span>
-              <span class="tech-badge">JavaScript</span>
-              <span class="tech-badge">Bootstrap</span>
-            </div>
-          </div>
+      <div class="content-top">
+        <div class="text">
+          <h1>KAYKY BEZERRA</h1>
+          <h2>FULLSTACK SOFTWARE DEVELOPER</h2>
         </div>
+        <div class="techs">
+          <div class="tech">Angular.js</div>
+          <div class="tech">Java Spring Boot</div>
+          <div class="tech">SQL</div>
+        </div>
+      </div>
 
-        <!-- Backend -->
-        <div class="col-md-6 col-lg-3">
-          <div class="tech-category">
-            <div class="tech-icon">
-              <i class="fas fa-server"></i>
-            </div>
-            <h4>Backend</h4>
-            <div class="tech-list">
-              <span class="tech-badge">PHP</span>
-              <span class="tech-badge">Node.js</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">SQL</span>
-            </div>
-          </div>
-        </div>
+      <div class="action-links">
+        <a href="#sobre-secao" class="link-btn">Sobre Mim</a>
+        <a href="#projetos-secao" class="link-btn">Projetos</a>
+        <a href="#linkedin" class="link-btn">LinkedIn</a>
+        <a href="#contato-secao" class="link-btn">Contato</a>
+      </div>
+    </div>
 
-        <!-- Design & Tools -->
-        <div class="col-md-6 col-lg-3">
-          <div class="tech-category">
-            <div class="tech-icon">
-              <i class="fas fa-palette"></i>
-            </div>
-            <h4>Design</h4>
-            <div class="tech-list">
-              <span class="tech-badge">Canva</span>
-              <span class="tech-badge">Photoshop</span>
-              <span class="tech-badge">UML</span>
-              <span class="tech-badge">Figma</span>
-            </div>
-          </div>
-        </div>
+    <img src="../images/logoPrincipal.png" class="character" alt="Kayky Bezerra">
+  </div>
 
-        <!-- Enterprise -->
-        <div class="col-md-6 col-lg-3">
-          <div class="tech-category">
-            <div class="tech-icon">
-              <i class="fas fa-briefcase"></i>
+  <section id="sobre-secao">
+  <div class="sobre-container">
+
+    <div class="sobre-coluna esquerda">
+      <h2>FORMAÇÃO</h2>
+      <div class="linha"></div>
+      <p>Curso Técnico em Desenvolvimento de Sistemas - ETEC de Itaquera</p>
+      <p>Cursando Superior em Gestão da Tecnologia da Informação - FATEC de Itaquaquecetuba</p>
+    </div>
+
+    <img src="../images/aboutMe.png" class="sobre-personagem" alt="Kayky Sobre">
+
+    <div class="sobre-coluna direita">
+      <h2>EXPERIÊNCIA</h2>
+      <div class="linha"></div>
+      <p>
+        Desenvolvedor FullStack no 
+        <a href="https://iga.itau.com.br/#/home"
+          style="color: #ff6202; text-decoration-color: #ff6202;">
+          ITAÚ Gestão de Ativos
+        </a>
+      </p>
+      <p>09/2025 - Presente</p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="projetos-secao">
+    <div id="projetos-titulo">
+      <h2>PROJETOS</h2>
+    </div>
+
+    <div class="projetos-container">
+      <img src="../images/logoprojetos.png" class="character-joinha" alt="Kayky Bezerra Joinha">
+
+      <div class="projetos-grid">
+
+        <a class="projeto-card projeto-link" href="./pages/apolo-veiculos.html">
+          <div class="projeto-browser">
+            <div class="browser-bar">
+              <div class="controls">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <div class="address">https://...</div>
             </div>
-            <h4>Enterprise</h4>
-            <div class="tech-list">
-              <span class="tech-badge">SAP</span>
-              <span class="tech-badge">Git</span>
-              <span class="tech-badge">UML</span>
-              <span class="tech-badge">DFD</span>
+            <img src="../images/apolo-veiculos/img1.png">
+          </div>
+          <div class="projeto-info">
+            <h4>Apolo Veículos</h4>
+            <p>Sistema web de gerenciamento de negociações de automóveis</p>
+            <div class="projeto-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JavaScript</span>
             </div>
           </div>
-        </div>
+        </a>
+
+        <a class="projeto-card projeto-link" href="./pages/funko-log.html">
+          <div class="projeto-browser">
+            <div class="browser-bar">
+              <div class="controls">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <div class="address">https://...</div>
+            </div>
+            <img src="../images/funko-log/img1.png">
+          </div>
+          <div class="projeto-info">
+            <h4>Funko Log</h4>
+            <p>Sistema web de e-commerce para loja de Funko Pop</p>
+            <div class="projeto-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="projeto-card projeto-link" href="./pages/patrono-neves.html">
+          <div class="projeto-browser">
+            <div class="browser-bar">
+              <div class="controls">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <div class="address">https://...</div>
+            </div>
+            <img src="../images/patrono-neves/img1.png">
+          </div>
+          <div class="projeto-info">
+            <h4>Patrono Neves</h4>
+            <p>Plataforma web de cursos online</p>
+            <div class="projeto-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- Formação Acadêmica -->
-  <section class="education-section" id="formacao">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Formação Acadêmica</h2>
-        <p class="section-subtitle">Minha jornada educacional</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="education-content">
-              <h4>FATEC - Superior</h4>
-              <p class="education-course">Gestão da Tecnologia da Informação</p>
-              <p class="text-muted">Cursando, conhecimentos em gestão de pessoas, modelagem de processos, análise de sistemas e estratégias de TI.</p>
-            </div>
-          </div>
+  <section id="contato-secao">
+    <div class="contato-header">
+      <h2>CONTATO</h2>
+      <!-- <p>Vamos colaborar? Entre em contato comigo</p> -->
+    </div>
+    
+    <div class="contato-grid">
+      <a href="mailto:menezeskayky16@gmail.com" class="contato-card">
+        <div class="icone-circulo">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </div>
+        <h3>Email</h3>
+        <span>menezeskayky16@gmail.com</span>
+      </a>
 
-        <div class="col-md-6">
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <div class="education-content">
-              <h4>ETEC de Itaquera - Técnico</h4>
-              <p class="education-course">Desenvolvimento de Sistemas</p>
-              <p class="text-muted">Formado com foco em desenvolvimento Full Stack, aprendendo HTML, CSS, JavaScript, PHP e MySQL.</p>
-            </div>
-          </div>
+      <a href="tel:+5511959990386" class="contato-card">
+        <div class="icone-circulo">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         </div>
-      </div>
+        <h3>Telefone</h3>
+        <span>(11) 95999-0386</span>
+      </a>
+
+      <a href="https://github.com/kaykymnz" target="_blank" class="contato-card">
+        <div class="icone-circulo">
+          <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </div>
+        <h3>GitHub</h3>
+        <span>github.com/kaykymnz</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kayky-bezerra-49a730235/" target="_blank" class="contato-card">
+        <div class="icone-circulo">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </div>
+        <h3>LinkedIn</h3>
+        <span>Kayky Bezerra</span>
+      </a>
     </div>
   </section>
 
-  <!-- Projetos -->
-  <section class="projects-section" id="projetos">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Meus Projetos</h2>
-        <p class="section-subtitle">Trabalhos que realizei com dedicação e atenção aos detalhes</p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Projeto 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="imgs/apoloVeiculos.png" alt="Apolo Veículos">
-              <div class="project-overlay">
-                <a href="projetos/projeto1.html" class="btn btn-light">Ver Projeto</a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h5 class="project-title">Apolo Veículos</h5>
-              <p class="project-description">Sistema web de gerenciamento de negociações de automóveis</p>
-              <div class="project-tags">
-                <span class="tag">PHP</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projeto 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="imgs/funkoLog.png" alt="Funko Log">
-              <div class="project-overlay">
-                <a href="projetos/projeto2.html" class="btn btn-light">Ver Projeto</a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h5 class="project-title">Funko Log</h5>
-              <p class="project-description">Sistema web de e-commerce para loja de Funko Pop</p>
-              <div class="project-tags">
-                <span class="tag">PHP</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">Bootstrap</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projeto 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="imgs/patronoNeves.png" alt="Patrono Neves">
-              <div class="project-overlay">
-                <a href="projetos/projeto3.html" class="btn btn-light">Ver Projeto</a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h5 class="project-title">Patrono Neves</h5>
-              <p class="project-description">Plataforma web de cursos online com gerenciamento completo</p>
-              <div class="project-tags">
-                <span class="tag">PHP</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Designs e Cartazes -->
-  <section class="projects-section" id="designs">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Designs</h2>
-        <p class="section-subtitle">Cartazes e materiais de design gráfico</p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Cartaz 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="imgs/cartazes/estagio.png" alt="Programa de Estágio">
-              <div class="project-overlay">
-                <a href="cartazes/cartaz1.html" class="btn btn-light">Ver Cartaz</a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h5 class="project-title">Programa de Estágio</h5>
-              <p class="project-description">Cartaz promocional para divulgação</p>
-              <div class="project-tags">
-                <span class="tag">Design</span>
-                <span class="tag">Canva</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cartaz 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="imgs/cartazes/racismo.png" alt="Combate ao Racismo">
-              <div class="project-overlay">
-                <a href="cartazes/cartaz2.html" class="btn btn-light">Ver Cartaz</a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h5 class="project-title">Combate ao Racismo</h5>
-              <p class="project-description">Cartaz para divulgação de palestra</p>
-              <div class="project-tags">
-                <span class="tag">Design</span>
-                <span class="tag">Canva</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cartaz 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="imgs/cartazes/cartaz3.png" alt="Cartaz 3">
-              <div class="project-overlay">
-                <a href="cartazes/cartaz3.html" class="btn btn-light">Ver Cartaz</a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h5 class="project-title">Prevenção do Câncer de Mama</h5>
-              <p class="project-description">Cartaz informativo para conscientização hospitalar</p>
-              <div class="project-tags">
-                <span class="tag">Design</span>
-                <span class="tag">Canva</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="contact-section" id="contato">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Entre em Contato</h2>
-        <p class="section-subtitle">Vamos colaborar? Entre em contato comigo</p>
-      </div>
-
-      <div class="row g-4 justify-content-center">
-        <div class="col-md-6">
-          <div class="contact-card text-center">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <h5>Email</h5>
-            <a href="mailto:menezeskayky16@gmail.com">menezeskayky16@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="contact-card text-center">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <h5>Telefone</h5>
-            <a href="tel:+5511959990386">(11) 95999-0386</a>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="contact-card text-center">
-            <div class="contact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <h5>GitHub</h5>
-            <a href="https://github.com/kaykymnz" target="_blank">github.com/kaykymnz</a>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="contact-card text-center">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <h5>LinkedIn</h5>
-            <a href="https://www.linkedin.com/in/kayky-bezerra-49a730235/" target="_blank">Kayky Bezerra</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="fw-bold">Kayky Bezerra</h5>
-          <p class="text-muted">Desenvolvedor Full Stack apaixonado por tecnologia e inovação.</p>
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5 class="fw-bold">Links Rápidos</h5>
-          <ul class="list-unstyled">
-            <li><a href="#inicio" class="text-muted text-decoration-none">Início</a></li>
-            <li><a href="#projetos" class="text-muted text-decoration-none">Projetos</a></li>
-            <li><a href="#contato" class="text-muted text-decoration-none">Contato</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5 class="fw-bold">Redes Sociais</h5>
-          <div class="social-links-footer">
-            <a href="https://github.com/kaykymnz" target="_blank" class="text-muted text-decoration-none">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kayky-bezerra-49a730235/" target="_blank" class="text-muted text-decoration-none">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:menezeskayky16@gmail.com" class="text-muted text-decoration-none">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="border-top pt-4 text-center">
-        <p class="text-muted mb-0">&copy; 2025 Kayky Bezerra.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+const sobre = document.querySelector("#sobre-secao");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      sobre.classList.add("animar");
+    }
+  });
+}, { threshold: 0.4 });
+
+observer.observe(sobre);
+</script>
 </html>
