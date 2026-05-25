@@ -1,111 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Funko Log - Kayky Bezerra</title>
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta name="description" content="Detalhes do projeto Funko Log, desenvolvido por Kayky Bezerra.">
+
+  <title>Funko Log | Kayky Bezerra</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/x-icon" href="../images/studentAboutMe.png">
 </head>
-<body class="project-detail-page">
 
-  <!-- ── MODAL DE GALERIA ── -->
+<body class="project-detail-page">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="../index.html#inicio" aria-label="Kayky Bezerra">KB</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../index.html#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contato">Contato</a></li>
+        </ul>
+        <a href="mailto:menezeskayky16@gmail.com" class="btn btn-cv">Fale comigo</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="gallery-modal" role="dialog" aria-modal="true" aria-label="Galeria de imagens">
-    <button class="gallery-modal-close" aria-label="Fechar galeria">&#x2715;</button>
+    <button class="gallery-modal-close" aria-label="Fechar galeria">&times;</button>
     <div class="gallery-modal-inner">
       <button class="modal-arrow prev" aria-label="Imagem anterior">&#8249;</button>
-      <div style="overflow:hidden; width:100%; border-radius:10px;">
+      <div class="gallery-modal-viewport">
         <div class="gallery-modal-track"></div>
       </div>
-      <button class="modal-arrow next" aria-label="Próxima imagem">&#8250;</button>
+      <button class="modal-arrow next" aria-label="Proxima imagem">&#8250;</button>
     </div>
     <div class="gallery-modal-counter"></div>
     <div class="gallery-modal-thumbs"></div>
   </div>
 
-  <main class="project-wrapper">
-    <a class="project-back" href="../index.html#projetos-secao"><i class="bi bi-arrow-left"></i> Voltar aos projetos</a>
+  <main class="project-detail-main">
+    <div class="container">
+      <a class="project-back" href="../index.html#projetos">
+        <i class="fas fa-arrow-left"></i>
+        Voltar aos projetos
+      </a>
 
-    <!-- ── HERO GALLERY ── -->
-    <section class="hero-gallery">
-      <div class="hero-gallery-inner">
-        <div class="hero-gallery-track"></div>
-        <button class="hero-arrow prev" aria-label="Anterior">&#8249;</button>
-        <button class="hero-arrow next" aria-label="Próximo">&#8250;</button>
-      </div>
-      <div class="hero-gallery-thumbs"></div>
-    </section>
+      <section class="project-hero">
+        <span class="section-kicker">E-commerce</span>
+        <h1>Funko Log</h1>
+        <p>
+          Sistema leve para cadastro, edicao e exibicao de produtos Funko POP,
+          desenvolvido como pratica de integracao entre front-end, PHP e MySQL.
+        </p>
 
-    <section class="project-layout">
-      <div class="project-main">
-        <article class="project-block">
-          <h2>Sobre o Projeto</h2>
-          <p>Funko Log é um sistema CRUD simples de gerenciamento e exibição de produtos Funko POP!, desenvolvido por diversão como prática de PHP e MySQL com phpMyAdmin. É uma solução leve e funcional para colecionadores organizarem suas coleções.</p>
-        </article>
+        <div class="project-meta">
+          <div>
+            <span>Tipo</span>
+            <strong>Projeto de pratica</strong>
+          </div>
+          <div>
+            <span>Stack</span>
+            <strong>PHP, MySQL, Bootstrap</strong>
+          </div>
+          <div>
+            <span>Status</span>
+            <strong>Concluido</strong>
+          </div>
+        </div>
+      </section>
 
-        <article class="project-block">
-          <h3>Objetivo</h3>
-          <p>Criar uma aplicação web simples que permitisse o gerenciamento de uma coleção de Funko POPs, com operações básicas de CRUD (Create, Read, Update, Delete) em um banco de dados MySQL. O projeto foi desenvolvido como exercício prático de integração entre front-end e back-end.</p>
-        </article>
+      <section class="hero-gallery">
+        <div class="hero-gallery-inner">
+          <div class="hero-gallery-track"></div>
+          <button class="hero-arrow prev" aria-label="Anterior">&#8249;</button>
+          <button class="hero-arrow next" aria-label="Proximo">&#8250;</button>
+        </div>
+        <div class="hero-gallery-thumbs"></div>
+      </section>
 
-        <article class="project-block">
-          <h3>Funcionalidades Principais</h3>
-          <ul class="project-feature-list">
-            <li><i class="bi bi-check-circle-fill"></i> Visualização dos Funkos disponíveis no catálogo</li>
-            <li><i class="bi bi-check-circle-fill"></i> Administração com cadastro de novos Funkos</li>
-            <li><i class="bi bi-check-circle-fill"></i> Edição de informações de produtos existentes</li>
-            <li><i class="bi bi-check-circle-fill"></i> Exclusão de Funkos do catálogo</li>
-            <li><i class="bi bi-check-circle-fill"></i> Sistema feito para uso local ou em hospedagens básicas</li>
-          </ul>
-        </article>
+      <section class="project-layout">
+        <div class="project-main">
+          <article class="content-block">
+            <h2>Sobre o projeto</h2>
+            <p>
+              Funko Log e uma aplicacao CRUD para gerenciar e exibir produtos Funko POP.
+              O projeto foi construido para treinar persistencia de dados, telas de
+              administracao e exibicao de catalogo em uma solucao simples e funcional.
+            </p>
+          </article>
 
-        <article class="project-block">
-          <h3>Público-Alvo</h3>
-          <p>O projeto foi desenvolvido para colecionadores de Funko POP! que desejam organizar e gerenciar suas coleções de forma digital. É ideal para pequenas coleções e uso pessoal ou em pequenos negócios de vendas de Funko POP.</p>
-        </article>
+          <article class="content-block">
+            <h3>Objetivo</h3>
+            <p>
+              Criar uma aplicacao web que permita cadastrar, listar, editar e excluir
+              produtos em um banco MySQL, mantendo um fluxo direto para pequenas colecoes
+              ou lojas de nicho.
+            </p>
+          </article>
 
-        <article class="project-block">
-          <h3>Arquitetura Técnica</h3>
-          <p>O projeto segue um padrão de três camadas: apresentação (HTML, CSS, JavaScript), lógica de negócio (PHP) e persistência de dados (MySQL). Utiliza phpMyAdmin para gerenciamento do banco de dados, facilitando o desenvolvimento e manutenção.</p>
-        </article>
-      </div>
+          <article class="content-block">
+            <h3>Funcionalidades principais</h3>
+            <ul class="feature-list">
+              <li><i class="fas fa-check-circle"></i> Catalogo visual de Funkos cadastrados.</li>
+              <li><i class="fas fa-check-circle"></i> Area administrativa para novos produtos.</li>
+              <li><i class="fas fa-check-circle"></i> Edicao de informacoes de itens existentes.</li>
+              <li><i class="fas fa-check-circle"></i> Exclusao de produtos do catalogo.</li>
+              <li><i class="fas fa-check-circle"></i> Estrutura pensada para uso local ou hospedagem simples.</li>
+            </ul>
+          </article>
 
-      <aside class="project-sidebar">
-        <section class="sidebar-card">
-          <h3>Tecnologias</h3>
-          <ul class="tech-list">
-            <li><i class="bi bi-filetype-html"></i> HTML5</li>
-            <li><i class="bi bi-filetype-css"></i> CSS3</li>
-            <li><i class="bi bi-filetype-js"></i> JavaScript</li>
-            <li><i class="bi bi-filetype-php"></i> PHP</li>
-            <li><i class="bi bi-database-fill"></i> MySQL</li>
-            <li><i class="bi bi-box-fill"></i> phpMyAdmin</li>
-          </ul>
-        </section>
+          <article class="content-block">
+            <h3>Arquitetura tecnica</h3>
+            <p>
+              A aplicacao segue uma estrutura de tres camadas: apresentacao em HTML, CSS
+              e JavaScript, logica de negocio com PHP e persistencia em MySQL gerenciada
+              via phpMyAdmin.
+            </p>
+          </article>
+        </div>
 
-        <section class="sidebar-card">
-          <h3>Links Úteis</h3>
-          <a class="project-link" href="https://github.com/kaykymnz" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-github"></i> Ver no GitHub <i class="bi bi-box-arrow-up-right"></i>
-          </a>
-        </section>
+        <aside class="project-sidebar">
+          <section class="sidebar-box">
+            <h3>Tecnologias</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+              <li><i class="fab fa-php"></i> PHP</li>
+              <li><i class="fas fa-database"></i> MySQL</li>
+              <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            </ul>
+          </section>
 
-        <section class="sidebar-card">
-          <h3>Status do Projeto</h3>
-          <div class="project-status done"><i class="bi bi-check-circle-fill"></i> Concluído</div>
-        </section>
-      </aside>
-    </section>
+          <section class="sidebar-box">
+            <h3>Link util</h3>
+            <a href="https://github.com/kaykymnz" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-github"></i>
+              Ver no GitHub
+            </a>
+          </section>
+
+          <section class="sidebar-box">
+            <h3>Status</h3>
+            <div class="status-done">
+              <i class="fas fa-check-circle"></i>
+              Concluido
+            </div>
+          </section>
+        </aside>
+      </section>
+    </div>
   </main>
 
   <footer class="project-footer">
-    <p>&copy; 2025 Kayky Bezerra.</p>
+    <div class="container">
+      <p>&copy; 2026 Kayky Bezerra.</p>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/gallery.js"></script>
   <script>
-      loadGallery('../images/funko-log/');
+    loadGallery("../images/funko-log/");
   </script>
 </body>
+
 </html>

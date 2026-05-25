@@ -1,204 +1,371 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <title>Kayky Bezerra</title>
-  <link rel="stylesheet" href="./styles/style.css"> 
-  <link rel="icon" type="image/x-icon" href="./images/studentAboutMe.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Kayky Bezerra, desenvolvedor full stack e designer de interfaces." />
+
+  <title>Kayky Bezerra | Desenvolvedor Full Stack</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/studentAboutMe.png">
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="#inicio" aria-label="Kayky Bezerra">
+        KB
+      </a>
 
-<div class="container" id="home">
-    <div class="left">
-      <div class="code-decoration">&lt; / &gt;</div>
-      
-      <div class="content-top">
-        <div class="text">
-          <h1>KAYKY BEZERRA</h1>
-          <h2>FULLSTACK SOFTWARE DEVELOPER</h2>
-        </div>
-        <div class="techs">
-          <div class="tech">Angular.js</div>
-          <div class="tech">Java Spring Boot</div>
-          <div class="tech">SQL</div>
-        </div>
-      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="action-links">
-        <a href="#sobre-secao" class="link-btn">Sobre Mim</a>
-        <a href="#projetos-secao" class="link-btn">Projetos</a>
-        <a href="#linkedin" class="link-btn">LinkedIn</a>
-        <a href="#contato-secao" class="link-btn">Contato</a>
-      </div>
-    </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#designs">Designs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
 
-    <img src="./images/logoPrincipal.png" class="character" alt="Kayky Bezerra">
-  </div>
-
-  <section id="sobre-secao">
-  <div class="sobre-container">
-
-    <div class="sobre-coluna esquerda">
-      <h2>FORMAÇÃO</h2>
-      <div class="linha"></div>
-      <p>Curso Técnico em Desenvolvimento de Sistemas - ETEC de Itaquera</p>
-      <p>Cursando Superior em Gestão da Tecnologia da Informação - FATEC de Itaquaquecetuba</p>
-    </div>
-
-    <img src="./images/aboutMe.png" class="sobre-personagem" alt="Kayky Sobre">
-
-    <div class="sobre-coluna direita">
-      <h2>EXPERIÊNCIA</h2>
-      <div class="linha"></div>
-      <p>
-        Desenvolvedor FullStack no 
-        <a href="https://iga.itau.com.br/#/home"
-          style="color: #ff6202; text-decoration-color: #ff6202;">
-          ITAÚ Gestão de Ativos
+        <a href="mailto:menezeskayky16@gmail.com" class="btn btn-cv">
+          Fale comigo
         </a>
-      </p>
-      <p>09/2025 - Presente</p>
-    </div>
-
-  </div>
-</section>
-
-  <section id="projetos-secao">
-    <div id="projetos-titulo">
-      <h2>PROJETOS</h2>
-    </div>
-
-    <div class="projetos-container">
-      <img src="./images/logoprojetos.png" class="character-joinha" alt="Kayky Bezerra Joinha">
-
-      <div class="projetos-grid">
-
-        <a class="projeto-card projeto-link" href="./pages/apolo-veiculos.html">
-          <div class="projeto-browser">
-            <div class="browser-bar">
-              <div class="controls">
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
-              </div>
-              <div class="address">https://...</div>
-            </div>
-            <img src="./images/apolo-veiculos/img1.png">
-          </div>
-          <div class="projeto-info">
-            <h4>Apolo Veículos</h4>
-            <p>Sistema web de gerenciamento de negociações de automóveis</p>
-            <div class="projeto-tags">
-              <span class="tag">PHP</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">JavaScript</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="projeto-card projeto-link" href="./pages/funko-log.html">
-          <div class="projeto-browser">
-            <div class="browser-bar">
-              <div class="controls">
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
-              </div>
-              <div class="address">https://...</div>
-            </div>
-            <img src="./images/funko-log/img1.png">
-          </div>
-          <div class="projeto-info">
-            <h4>Funko Log</h4>
-            <p>Sistema web de e-commerce para loja de Funko Pop</p>
-            <div class="projeto-tags">
-              <span class="tag">PHP</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Bootstrap</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="projeto-card projeto-link" href="./pages/patrono-neves.html">
-          <div class="projeto-browser">
-            <div class="browser-bar">
-              <div class="controls">
-                <span class="red"></span>
-                <span class="yellow"></span>
-                <span class="green"></span>
-              </div>
-              <div class="address">https://...</div>
-            </div>
-            <img src="./images/patrono-neves/img1.png">
-          </div>
-          <div class="projeto-info">
-            <h4>Patrono Neves</h4>
-            <p>Plataforma web de cursos online</p>
-            <div class="projeto-tags">
-              <span class="tag">PHP</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">JavaScript</span>
-            </div>
-          </div>
-        </a>
-
       </div>
     </div>
-  </section>
+  </nav>
 
-  <section id="contato-secao">
-    <div class="contato-header">
-      <h2>CONTATO</h2>
-      <!-- <p>Vamos colaborar? Entre em contato comigo</p> -->
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="row align-items-center min-vh-100 gy-5">
+          <div class="col-lg-6">
+            <span class="subtitle">Ola, eu sou</span>
+
+            <h1>Kayky Bezerra</h1>
+
+            <h2>
+              Desenvolvedor
+              <span>Full Stack & Designer</span>
+            </h2>
+
+            <p>
+              Crio sistemas web completos com foco em organizacao, experiencia do usuario
+              e solucoes que resolvem problemas reais. Aplico design pensado para interfaces
+              claras, navegacao intuitiva e resultados impactantes.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projetos" class="btn btn-primary-custom">
+                Ver projetos
+              </a>
+              <a href="#contato" class="btn btn-outline-custom">
+                Entre em contato
+              </a>
+            </div>
+
+            <div class="social-icons" aria-label="Redes sociais">
+              <a href="https://github.com/kaykymnz" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub de Kayky Bezerra">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kayky-bezerra-49a730235/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn de Kayky Bezerra">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:menezeskayky16@gmail.com" aria-label="Enviar email para Kayky Bezerra">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <div class="profile-wrapper">
+              <img src="images/logoPrincipal.png" class="img-fluid profile-img" alt="Ilustracao de Kayky Bezerra">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="sobre">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-kicker">Sobre mim</span>
+            <h2>
+              Desenvolvo aplicações web e designs com olhar técnico e cuidado com a experiência.
+            </h2>
+            <p>
+              Sou desenvolvedor full stack e designer, formado no curso técnico em Desenvolvimento de
+              Sistemas pela ETEC de Itaquera e cursando Gestão da Tecnologia da Informação
+              na FATEC de Itaquaquecetuba.
+            </p>
+            <p>
+              Atualmente atuo como Estagiário Desenvolvedor Full Stack no Itau Gestão de Ativos,
+              trabalhando com soluções digitais e evolução de sistemas. Também desenvolvo
+              experiências visuais e interfaces que priorizam clareza, consistência e usabilidade.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-panel">
+              <div class="about-item">
+                <span>Formação Superior</span>
+                <strong>FATEC de Itaquaquecetuba</strong>
+                <p>Gestão da Tecnologia da Informação em andamento.</p>
+              </div>
+              <div class="about-item">
+                <span>Formação Técnica</span>
+                <strong>ETEC de Itaquera</strong>
+                <p>Técnico em Desenvolvimento de Sistemas.</p>
+              </div>
+              <div class="about-item">
+                <span>Experiência Atual</span>
+                <strong>Itau Gestão de Ativos</strong>
+                <p>Estagiário Desenvolvedor Full Stack desde 09/2025.</p>
+              </div>
+              <div class="about-item">
+                <span>Experiência Anterior</span>
+                <strong>Hospital Waldomiro de Paula</strong>
+                <p>Estagiário de Administração e Comunicação - 06/2024 - 09/2025.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="designs">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-kicker">Design</span>
+          <h2>Designs com foco em usabilidade e resultado</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-custom">
+              <i class="fas fa-object-ungroup"></i>
+              <h3>Visual</h3>
+              <p>Planejo jornadas de usuario para tornar cada interacao mais clara e eficiente.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-custom">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Comercial</h3>
+              <p>Desenvolvo layouts consistentes, responsivos e visualmente agradaveis.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-custom">
+              <i class="fas fa-layer-group"></i>
+              <h3>Prototipagem</h3>
+              <p>Transformo ideias em telas que orientam o desenvolvimento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="designs-gallery" style="margin-top: 52px;">
+          <div class="row g-4">
+            <!-- POSTER CARD -->
+            <div class="col-lg-4">
+              <a href="pages/designs-posters.html" class="design-card project-card">
+                <img src="images/designs/posters/capa_poster.png" class="img-fluid" alt="Posters - Dia das Mães">
+                <div class="project-content">
+                  <span>POSTERS</span>
+                  <h3>Campanhas e Comunicação</h3>
+                  <p>Designs de posters para murais, campanhas internas e datas comemorativas.</p>
+                  <div class="design-badge" style="margin-top: 12px; font-size: 0.85rem; color: var(--cyan);">7 designs →</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- ANUNCIO CARD -->
+            <div class="col-lg-4">
+              <a href="pages/designs-anuncios.html" class="design-card project-card">
+                <img src="images/designs/anuncios/capa_anuncio.png" class="img-fluid" alt="Anúncios - AOC Monitor">
+                <div class="project-content">
+                  <span>ANÚNCIOS</span>
+                  <h3>Produtos e E-commerce</h3>
+                  <p>Edições de imagens e designs de produtos para venda em plataformas online.</p>
+                  <div class="design-badge" style="margin-top: 12px; font-size: 0.85rem; color: var(--cyan);">2 designs →</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- PROTOTIPO CARD -->
+            <div class="col-lg-4">
+              <a href="pages/designs-prototipos.html" class="design-card project-card">
+                <img src="images/designs/prototipos/capa_prototipo.png" class="img-fluid" alt="Protótipos - Royal">
+                <div class="project-content">
+                  <span>PROTÓTIPOS</span>
+                  <h3>UI/UX em Figma</h3>
+                  <p>Designs de interfaces e protótipos interativos desenvolvidos em Figma.</p>
+                  <div class="design-badge" style="margin-top: 12px; font-size: 0.85rem; color: var(--cyan);">5 designs →</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: center; margin-top: 42px;">
+            <a href="pages/designs.html" class="btn btn-outline-custom">
+              Ver todos os designs
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding services-section" id="servicos">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-kicker">Serviços</span>
+          <h2>Como posso contribuir</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom">
+              <i class="fas fa-code"></i>
+              <h3>Front-end</h3>
+              <p>Interfaces responsivas, claras e preparadas para uso real.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom">
+              <i class="fas fa-server"></i>
+              <h3>Back-end</h3>
+              <p>APIs, regras de negocio e integracoes para sistemas web.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom">
+              <i class="fas fa-database"></i>
+              <h3>Banco de dados</h3>
+              <p>Modelagem, consultas e organizacao de dados relacionais.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card-custom">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Design de interfaces</h3>
+              <p>Layouts modernos e usabilidade alinhada ao projeto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="projetos">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-kicker">Portfolio</span>
+          <h2>Projetos recentes</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a class="project-card" href="pages/apolo-veiculos.html">
+              <img src="images/apolo-veiculos/img1.png" class="img-fluid" alt="Tela do projeto Apolo Veiculos">
+              <div class="project-content">
+                <span>Sistema web</span>
+                <h3>Apolo Veiculos</h3>
+                <p>Gerenciamento de negociacoes de automoveis, estoque e acompanhamento de vendas.</p>
+                <div class="project-tags">
+                  <small>PHP</small>
+                  <small>MySQL</small>
+                  <small>JavaScript</small>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a class="project-card" href="pages/funko-log.html">
+              <img src="images/funko-log/img1.png" class="img-fluid" alt="Tela do projeto Funko Log">
+              <div class="project-content">
+                <span>E-commerce</span>
+                <h3>Funko Log</h3>
+                <p>Catalogo e CRUD para organizacao de produtos Funko POP com PHP e MySQL.</p>
+                <div class="project-tags">
+                  <small>PHP</small>
+                  <small>MySQL</small>
+                  <small>Bootstrap</small>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a class="project-card" href="pages/patrono-neves.html">
+              <img src="images/patrono-neves/img1.png" class="img-fluid" alt="Tela do projeto Patrono Neves">
+              <div class="project-content">
+                <span>Educação</span>
+                <h3>Patrono Neves</h3>
+                <p>Plataforma de cursos online com gerenciamento de conteudo, usuarios e progresso.</p>
+                <div class="project-tags">
+                  <small>PHP</small>
+                  <small>MySQL</small>
+                  <small>JavaScript</small>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="section-kicker">Contato</span>
+          <h2>Vamos construir algo bom juntos?</h2>
+          <p>Estou disponivel para conversar sobre projetos, oportunidades e colaborações.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:menezeskayky16@gmail.com" class="btn btn-primary-custom">
+            Enviar email
+          </a>
+          <a href="tel:+5511959990386" class="contact-link">
+            <i class="fas fa-phone"></i>
+            (11) 95999-0386
+          </a>
+          <a href="https://github.com/kaykymnz" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fab fa-github"></i>
+            github.com/kaykymnz
+          </a>
+        </div>
+      </div>
     </div>
-    
-    <div class="contato-grid">
-      <a href="mailto:menezeskayky16@gmail.com" class="contato-card">
-        <div class="icone-circulo">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        </div>
-        <h3>Email</h3>
-        <span>menezeskayky16@gmail.com</span>
-      </a>
+  </footer>
 
-      <a href="tel:+5511959990386" class="contato-card">
-        <div class="icone-circulo">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-        </div>
-        <h3>Telefone</h3>
-        <span>(11) 95999-0386</span>
-      </a>
-
-      <a href="https://github.com/kaykymnz" target="_blank" class="contato-card">
-        <div class="icone-circulo">
-          <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-        </div>
-        <h3>GitHub</h3>
-        <span>github.com/kaykymnz</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/kayky-bezerra-49a730235/" target="_blank" class="contato-card">
-        <div class="icone-circulo">
-          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-        </div>
-        <h3>LinkedIn</h3>
-        <span>Kayky Bezerra</span>
-      </a>
-    </div>
-  </section>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/design-gallery.js"></script>
 </body>
-<script>
-const sobre = document.querySelector("#sobre-secao");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      sobre.classList.add("animar");
-    }
-  });
-}, { threshold: 0.4 });
-
-observer.observe(sobre);
-</script>
 </html>
