@@ -2,7 +2,7 @@
  * gallery.js — Modal de galeria com carrossel
  *
  * Uso no HTML — passe só o caminho da pasta do projeto:
- *   loadGallery('../images/apolo-veiculos/');
+ *   loadGallery('../../images/apolo-veiculos/');
  *
  * As imagens devem se chamar img1.png, img2.png, img3.png...
  * O loop para automaticamente quando não encontrar a próxima.
@@ -10,6 +10,9 @@
 
 function loadGallery(folder) {
   const extensions = ['png', 'jpg', 'jpeg', 'webp'];
+  const gallery = document.querySelector('.hero-gallery');
+
+  if (gallery) gallery.classList.add('image-loading');
 
   function probImage(src) {
     return new Promise((resolve) => {
@@ -45,6 +48,7 @@ function loadGallery(folder) {
 }
 
 function initGallery(images) {
+  const gallery     = document.querySelector('.hero-gallery');
   const heroInner   = document.querySelector('.hero-gallery-inner');
   const heroTrack   = document.querySelector('.hero-gallery-track');
   const heroThumbs  = document.querySelector('.hero-gallery-thumbs');
@@ -60,7 +64,6 @@ function initGallery(images) {
   const modalCounter = document.querySelector('.gallery-modal-counter');
 
   if (!images || images.length === 0) {
-    const gallery = document.querySelector('.hero-gallery');
     if (gallery) gallery.style.display = 'none';
     return;
   }
@@ -72,6 +75,7 @@ function initGallery(images) {
     const img = document.createElement('img');
     img.src = src;
     img.alt = `Screenshot ${i + 1}`;
+    img.loading = i === 0 ? 'eager' : 'lazy';
     heroTrack.appendChild(img);
 
     const thumb = document.createElement('img');
@@ -103,6 +107,7 @@ function initGallery(images) {
     const img = document.createElement('img');
     img.src = src;
     img.alt = `Screenshot ${i + 1}`;
+    img.loading = i === 0 ? 'eager' : 'lazy';
     modalTrack.appendChild(img);
 
     const thumb = document.createElement('img');
@@ -154,4 +159,16 @@ function initGallery(images) {
 
   goHero(0);
   goModal(0);
+
+  const firstImage = heroTrack.querySelector('img');
+  const finishLoading = () => {
+    if (gallery) gallery.classList.remove('image-loading');
+  };
+
+  if (!firstImage || (firstImage.complete && firstImage.naturalWidth > 0)) {
+    finishLoading();
+  } else {
+    firstImage.addEventListener('load', finishLoading, { once: true });
+    firstImage.addEventListener('error', finishLoading, { once: true });
+  }
 }
